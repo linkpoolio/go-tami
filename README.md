@@ -37,4 +37,4 @@ func main() {
 
 ## Motivation
 
-See the [JavaScript implementation](https://github.com/Mimicry-Protocol/TAMI) for background.
+See the [TypeScript implementation](https://github.com/Mimicry-Protocol/TAMI) for background.
