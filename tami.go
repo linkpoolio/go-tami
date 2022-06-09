@@ -6,13 +6,13 @@ import (
 )
 
 type Transaction struct {
-	Price     int
+	Price     float64
 	ItemID    interface{}
 	Timestamp time.Time
 }
 
 type IndexValueHistoryItem struct {
-	Price       int
+	Price       float64
 	ItemID      interface{}
 	IndexValue  float64
 	Transaction Transaction
@@ -107,7 +107,7 @@ func CreateIndexValueHistory(transactionHistory []Transaction) []IndexValueHisto
 
 		itemCount := len(transactionMap)
 
-		allLastSoldValue := 0
+		allLastSoldValue := float64(0)
 
 		for _, t := range transactionMap {
 			allLastSoldValue += t.Price
